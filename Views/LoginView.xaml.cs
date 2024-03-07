@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace XAML_LoginForm.View
+namespace XAML_LoginForm.Views
 {
     /// <summary>
     /// Interaction logic for LoginView.xaml
