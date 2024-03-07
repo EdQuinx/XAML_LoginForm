@@ -15,14 +15,14 @@ namespace XAML_LoginForm.ViewModels
     public class LoginViewModel : ViewModelBase
     {
         //Fields
-        private string _username;
-        private string _password;
-        private string _errorMessage;
-        private bool _isViewVisible = true;
+        private string? _username;
+        private string? _password;
+        private string? _errorMessage;
+        private bool? _isViewVisible = true;
 
         private IUserRepository userRepository;
         //Properties
-        public string Username
+        public string? Username
         {
             get => _username;
             set
@@ -31,7 +31,7 @@ namespace XAML_LoginForm.ViewModels
                 OnPropertyChanged(nameof(Username));
             }
         }
-        public string Password
+        public string? Password
         {
             get => _password;
             set
@@ -40,7 +40,7 @@ namespace XAML_LoginForm.ViewModels
                 OnPropertyChanged(nameof(Password));
             }
         }
-        public string ErrorMessage
+        public string? ErrorMessage
         {
             get => _errorMessage;
             set
@@ -49,7 +49,7 @@ namespace XAML_LoginForm.ViewModels
                 OnPropertyChanged(nameof(ErrorMessage));
             }
         }
-        public bool IsViewVisible
+        public bool? IsViewVisible
         {
             get => _isViewVisible;
             set
@@ -60,10 +60,10 @@ namespace XAML_LoginForm.ViewModels
         }
 
         //-> Commands
-        public ICommand LoginCommand { get; }
-        public ICommand RecoverPasswordCommand { get; }
-        public ICommand ShowPasswordCommand { get; }
-        public ICommand RememberPasswordCommand { get; }
+        public ICommand? LoginCommand { get; }
+        public ICommand? RecoverPasswordCommand { get; }
+        public ICommand? ShowPasswordCommand { get; }
+        public ICommand? RememberPasswordCommand { get; }
 
         public LoginViewModel()
         {

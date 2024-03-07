@@ -8,8 +8,8 @@ namespace XAML_LoginForm.Models
 {
     public class UserAccountModel
     {
-        public string Username { get; set; }    
-        public string DisplayName { get; set; }
-        public byte[] ProfilePictue { get; set; }
+        public string? Username { get; set; }
+        public string? DisplayName { get; set; }
+        public byte[]? ProfilePictue { get; set; }
     }
 }

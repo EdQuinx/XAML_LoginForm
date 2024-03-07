@@ -51,7 +51,7 @@ namespace XAML_LoginForm.Repositories
 
         public UserModel GetByUsername(string username)
         {
-            UserModel userModel = null;
+            UserModel? userModel = null;
             using SqlConnection connection = GetConnection();
             using (SqlCommand command = new SqlCommand())
             {

@@ -10,8 +10,8 @@ namespace XAML_LoginForm.ViewModels
     public class ViewModelCommand<T> : ICommand
     {
         //Fields
-        private readonly Predicate<T> _canExecute;
-        private readonly Action<T> _execute;
+        private readonly Predicate<T>? _canExecute;
+        private readonly Action<T>? _execute;
 
         //Contructors
         public ViewModelCommand(Action<T> execute)
@@ -39,7 +39,7 @@ namespace XAML_LoginForm.ViewModels
         }
 
         //Events
-        public event EventHandler CanExecuteChanged
+        public event EventHandler? CanExecuteChanged
         {
             add { CommandManager.RequerySuggested += value; }
             remove { CommandManager.RequerySuggested -= value; }

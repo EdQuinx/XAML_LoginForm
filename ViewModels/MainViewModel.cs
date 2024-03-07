@@ -13,10 +13,10 @@ namespace XAML_LoginForm.ViewModels
     public class MainViewModel : ViewModelBase
     {
         //Fields
-        private UserAccountModel _currentUserAccount;
+        private UserAccountModel? _currentUserAccount;
         private IUserRepository userRepository;
 
-        public UserAccountModel CurrentUserAccount 
+        public UserAccountModel? CurrentUserAccount 
         {
             get => _currentUserAccount;
             set
