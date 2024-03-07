@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace XAML_LoginForm.VieewModels
+namespace XAML_LoginForm.ViewModels
 {
     public class ViewModelCommand<T> : ICommand
     {

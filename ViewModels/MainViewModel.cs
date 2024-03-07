@@ -8,7 +8,7 @@ using System.Windows;
 using XAML_LoginForm.Models;
 using XAML_LoginForm.Repositories;
 
-namespace XAML_LoginForm.VieewModels
+namespace XAML_LoginForm.ViewModels
 {
     public class MainViewModel : ViewModelBase
     {
